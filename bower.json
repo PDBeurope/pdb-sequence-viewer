@@ -1,0 +1,31 @@
+{
+  "name": "pdb-sequence-viewer",
+  "main": "index.js",
+  "version": "1.0.0",
+  "authors": [
+    "Mandar Deshpande <mandar@ebi.ac.uk>"
+  ],
+  "description": "The sequence-feature view shows a linear representation of the sequence of the protein in a PDB entry and depicts annotation from SIFTS.",
+  "moduleType": [
+    "globals",
+	"node"
+  ],
+  "keywords": ["BioJS", "PDB component", "PDB Sequence Viewer", "PDBe", "SIFTS Annotation", "AngularJS", "D3.js"],
+  "license": "Apache-2.0",
+  "homepage": "http://www.ebi.ac.uk/pdbe/pdb-component-library/doc.html#a_sequenceFeatureView",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/mandarsd/pdb-sequence-viewer.git"
+  },
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "1.4.7",
+	"d3": "3.5.3"
+  }
+}

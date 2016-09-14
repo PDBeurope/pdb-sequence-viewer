@@ -1,0 +1,50 @@
+<html>
+    <head>
+		<!-- demo css -->
+		<style>
+		code {
+			padding: 2px 4px;
+			font-size: 90%;
+			color: #c7254e;
+			background-color: #f9f2f4;
+			border-radius: 4px;
+		}
+		</style>
+		
+		<!-- D3.js & AngularJS dependency library files -->
+		<script src="../../bower_components/d3/d3.min.js"></script>
+		<script src="../../bower_components/angular/angular.min.js"></script>
+		
+		<!-- PDB Sequence Viewer CSS and script -->
+		<link rel="stylesheet" href="../../build/pdb.sequence.viewer.min.css" />
+		<script src="../../build/pdb.sequence.viewer.min.js"></script>
+		
+		<!-- 
+		If you are developing a non-angularJs Application, 
+		bootstrap 'pdb.sequence.viewer' module as show below
+		-->
+		<script>
+		(function () {
+			'use strict';
+			angular.element(document).ready(function () {
+				angular.bootstrap(document, ['pdb.sequence.viewer']);
+			});
+		}());
+		</script>
+		
+    </head>
+    <body>
+		<div style="margin:20px 0 20px 20px">
+			<h3>PDB Sequence Viewer</h3><hr>
+			
+			<h4>Sequence-feature View</h4>
+			<pdb-seq-viewer entry-id="1aqd" entity-id="1" height="370" width="750"></pdb-seq-viewer>
+			<br><strong>Use mouse scroll for zoom-in/out.</strong><br>
+			
+			<br><code>&lt;pdb-seq-viewer entry-id="1aqd" entity-id="1" height="370" width="750"'&gt;&lt;/pdb-seq-viewer&gt;</code><br>
+			
+			<br>
+			The viewer takes the width and height of its parent element on page load. In order to set fixed the dimensions<br>please use the component 'width' and 'height' attribute as demonstrated above.
+		</div>
+	</body>
+</html>

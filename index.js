@@ -1,0 +1,1 @@
+require("./build/pdb.sequence.viewer.bundle.min");

@@ -1,0 +1,43 @@
+<html>
+    <head>
+		
+		<!-- demo css -->
+		<style>
+		code {
+			padding: 2px 4px;
+			font-size: 90%;
+			color: #c7254e;
+			background-color: #f9f2f4;
+			border-radius: 4px;
+		}
+		</style>
+		
+		<!-- PDB Sequence Viewer CSS and bundle script -->
+		<link rel="stylesheet" href="../../build/pdb.sequence.viewer.bundle.min.css" />
+		<script src="../../build/pdb.sequence.viewer.bundle.min.js"></script>
+		
+    </head>
+    <body>
+		<div style="margin:20px 0 20px 20px">
+			<h3>PDB Sequence Viewer Demo</h3><hr>
+			
+			<h4>Sequence feature View</h4>
+			<pdb-seq-viewer entry-id="1aqd" entity-id="1" viewer-type="pdbViewer" settings='{"height": 320, "width": 750}'></pdb-seq-viewer>
+			
+			<br/>
+			<code>&lt;pdb-seq-viewer entry-id="1aqd" entity-id="1" viewer-type="pdbViewer" settings='{"height": 320, "width": 750}'&gt;&lt;/pdb-seq-viewer&gt;</code>  
+			<br>
+			
+			<h4>UniProt Coverage Viewer</h4>
+			<pdb-seq-viewer entry-id="P07550" viewer-type="unipdbViewer" settings='{"height": 320, "width": 750}'></pdb-seq-viewer>
+			
+			<br>
+			<strong>Use mouse scroll for zoom-in/out.</strong>
+			<br><br>
+			The viewer is partially responsive and takes the width of its parent element on page load. In order <br>to set fixed dimensions (height and width) please use the component 'settings' attribute
+			<br/>
+			Example :
+			
+		</div>
+    </body>
+</html>

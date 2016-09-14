@@ -1,0 +1,46 @@
+{
+  "name": "pdb-sequence-viewer",
+  "description": "The sequence-feature view shows a linear representation of the sequence of the protein in a PDB entry and depicts value-added annotation from SIFTS. It is a PDB Component developed using D3.js and AngularJS.",
+  "version": "1.0.0",
+  "homepage": "https://github.com/mandarsd/pdb-sequence-viewer",
+  "author": {
+    "name": "Mandar Deshpande",
+    "email": "mandar@ebi.ac.uk"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/mandarsd/pdb-sequence-viewer.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mandarsd/pdb-sequence-viewer/issues"
+  },
+  "license": "Apache-2.0",
+  "main": "index.js",
+  "scripts": {
+		"test": "echo 'Error: no test specified' && exit 1",
+		"build": "browserify -r ./:pdb-sequence-viewer -o build/pdbSequenceViewer_browserify.js"
+  },
+  "dependencies": {},
+  "devDependencies": {
+	"mkdirp": "^0.5.0",
+	"browserify": "^8.1.3",
+	"del": "^0.1.1",
+	"gulp": "^3.8.7",
+	"gulp-bump": "^0.2.1",
+	"gulp-concat": "^2.3.4",
+	"gulp-git": "^1.0.0",
+	"gulp-uglify": "^0.3.1",
+	"gulp-clean-css": "^2.0.12",
+	"gulp-autoprefixer": "^3.1.1",
+	"gulp-rename": "^1.2.2",
+	"gulp-header": "^1.8.8",
+	"gulp-sourcemaps": "^1.6.0"
+  }, 
+  "sniper": {
+    "js": [ "/build/pdbSequenceViewer_browserify.js"],
+	"css": ["/build/pdb.sequence.viewer.bundle.min.css"],
+    "snippets": ["examples/biojs"],
+    "first": "simple"
+   }, 
+  "keywords": ["BioJS", "PDB component", "PDB Sequence Viewer", "PDBe", "SIFTS Annotation", "AngularJS", "D3.js"]
+}
