@@ -4,6 +4,8 @@
 
 The sequence-feature view shows a linear representation of the sequence of the protein in a PDB entry and depicts value-added annotation from SIFTS. This including residue-level mapping to UniProt, sequence families (Pfam), structure domains (SCOP, CATH), mutations, binding-site residues, structure quality and secondary structure. By default the sequence-feature view shows the chain that has the maximum number of observed residues.
 
+It is a <a href="http://www.ebi.ac.uk/pdbe/pdb-component-library" target="_blank">PDB Component Library</a> component.
+
 ![PDB Sequence-feature Viewer](/assets/pdb-sequence-viewer.png)
 
 ## Getting Started
