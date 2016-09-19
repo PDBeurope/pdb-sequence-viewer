@@ -49,6 +49,7 @@
 .topSection, .topLeftSection, .bottomLeftSection, 
 .topRightSection, .bottomRightSection{
   float:left;
+  height:100%
 }
 
 .unipdbMappingDesc {
