@@ -1,7 +1,7 @@
 {
   "name": "pdb-sequence-viewer",
   "description": "The sequence-feature view shows a linear representation of the sequence of the protein in a PDB entry and depicts value-added annotation from SIFTS. It is a PDB Component developed using D3.js and AngularJS.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "homepage": "https://github.com/mandarsd/pdb-sequence-viewer",
   "author": {
     "name": "Mandar Deshpande",
